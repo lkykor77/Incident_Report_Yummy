@@ -4,6 +4,40 @@
 
 ---
 
+scenario: 
+You are tasked with analyzing the situation and determining which network protocol was affected during this incident. To start, you attempt to visit the website and you also receive the error “destination port unreachable.” To troubleshoot the issue, you load your network analyzer tool, tcpdump, and attempt to load the webpage again. To load the webpage, your browser sends a query to a DNS server via the UDP protocol to retrieve the IP address for the website's domain name; this is part of the DNS protocol. Your browser then uses this IP address as the destination IP for sending an HTTPS request to the web server to display the webpage  The analyzer shows that when you send UDP packets to the DNS server, you receive ICMP packets containing the error message: “udp port 53 unreachable.” 
+
+Now that you have captured data packets using a network analyzer tool, it is your job to identify which network protocol and service were impacted by this incident. Then, you will need to write a follow-up report. 
+
+As an analyst, you can inspect network traffic and network data to determine what is causing network-related issues during cybersecurity incidents. Later in this course, you will demonstrate how to manage and resolve incidents. For now, you only need to analyze the situation. 
+
+This event, in the meantime, is being handled by security engineers after you and other analysts have reported the issue to your direct supervisor. 
+
+Part 1: Provide a summary of the problem found in the DNS and ICMP 
+traffic log.
+
+The UDP protocol reveals that:
+
+This is based on the results of the network analysis, which show that the ICMP echo reply returned the error message: 
+
+The port noted in the error message is used for: 
+
+The most likely issue is:
+
+
+Part 2: Explain your analysis of the data and provide at least one cause of the incident.
+Time incident occurred:
+
+Explain how the IT team became aware of the incident:
+
+Explain the actions taken by the IT department to investigate the incident:
+
+Note key findings of the IT department's investigation (i.e., details related to the port affected, DNS server, etc.): 
+
+Note a likely cause of the incident:
+
+--
+
 While working as a cybersecurity analyst that specializes in providing IT services, several customers of clients reported that they could not access the client company website  yummyrecipesforme.com, a (**fictional**) website that sells recipes and cookbooks, and saw the error "destination port unreachable". A malicious actor decided to publish the website’s best-selling recipes on their website for the public to access for free. 
 
 The attacker executed a dictionary attack; a type of brute-force attack to gain access to the web host. Later investigations revealed they repeatedly entered several known default passwords for the administrative account until they entered the correct password. After obtaining the login credentials, the malicious actor was able to access the admin panel and change our website’s source code. Investigations reveal they embedded a JavaScript function in the website's source code that prompted visitors to download and run a file upon visiting the website. After executing the file, the victims are redirected to a fake version of our website where our recipes are now available for free.

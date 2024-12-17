@@ -64,6 +64,13 @@ Provide the suspected root cause of the problem.
 
 Record your responses in part two of the cybersecurity incident report. 
 
+What to Include in Your Response
+Be sure to address the following items in your completed activity:   
+
+Provide a summary of the problem found in the tcpdump log
+
+Explain your analysis of the data and provide one possible cause of the incident
+
 --
 
 While working as a cybersecurity analyst that specializes in providing IT services, several customers of clients reported that they could not access the client company website  yummyrecipesforme.com, a (**fictional**) website that sells recipes and cookbooks, and saw the error "destination port unreachable". A malicious actor decided to publish the website’s best-selling recipes on their website for the public to access for free. 
